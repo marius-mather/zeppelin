@@ -1,0 +1,36 @@
+[
+    {
+        "name": "Stream 1",
+        "id": "stream1",
+        "description": "Stream 1 will have cool talks",
+        "eventbrite": "link_goes_here",
+        "schedule": [
+            {
+                "date": "2020-07-07",
+                "date_readable": "Tuesday 7th",
+                "timeslots": [
+                    {"start_time": "10:00", "end_time": "10:45",
+                    "title": "Learning Python", "speaker": "Guido van Rossum"},
+                    {"start_time": "11:00", "end_time": "12:00",
+                    "title": "Learning Python", "speaker": "Guido van Rossum"},
+                ],
+            }
+        ]
+    },
+    {
+        "name": "Stream 2",
+        "id": "stream2",
+        "description": "Stream 2 will have cool talks",
+        "eventbrite": "link_goes_here",
+        "schedule": [
+            {
+                "date": "2020-07-07",
+                "date_readable": "Tuesday 7th",
+                "timeslots": [
+                    {"start_time": "10:00", "end_time": "10:45"},
+                    {"start_time": "11:00", "end_time": "12:00"}
+                ]
+            }
+        ]
+    }
+]

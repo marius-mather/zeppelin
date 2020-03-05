@@ -1,0 +1,56 @@
+<section id="worskshop-schedule" class="workshop-schedule">
+    <div class="content-wrapper">
+        <p>
+            You can only register for one stream of workshops. Please select your stream below, and register.
+        </p>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 col-md-offset-1">
+            <ul class="nav nav-tabs nav-justified" id="workshop-tabs" role="tablist">
+                {% for stream in site.data.workshops %}
+                    <li role="presentation" class="{% if forloop.index == 1 %}active{% endif %}">
+                        <a class="nav-link" aria-controls="{{stream.id}}" data-toggle="tab" href="#{{stream.id}}" role="tab">
+                            {{stream.name}}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+            <div class="tab-content" id="workshop-info">
+                {% for stream in site.data.workshops %}
+                    <div class="tab-pane {% if forloop.index == 1 %}active{% endif %}" id="{{stream.id}}" role="tabpanel">
+                        <p> 
+                            {{stream.description}}
+                        </p>
+                        <p>
+                            <a href="{{ stream.eventbrite }}">Eventbrite link goes here</a>
+                        </p>
+
+                        {% for day in stream.schedule %}
+                            <table class="table table-striped table-hover">
+                                <tr class="text-left">
+                                    <th>Time</th>
+                                    <th>Session</th>
+                                    <th>Speaker</th>
+                                </tr>
+                                {% for timeslot in day.timeslots %}
+                                    <tr class="text-left">
+                                        <td>{{timeslot.start_time}} to {{timeslot.end_time}}</td>
+                                        <td>{{timeslot.title}}</td>
+                                        <td>{{timeslot.speaker}}</td>
+                                    </tr>
+                                {% endfor %}
+                            </table>
+                        {% endfor %}
+
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $('#workshop-tabs a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    });
+</script>
