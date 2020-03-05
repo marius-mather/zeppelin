@@ -18,7 +18,7 @@
                 {% for stream in site.data.workshops %}
                     <div class="tab-pane {% if forloop.index == 1 %}active{% endif %}" id="{{stream.id}}" role="tabpanel">
                         <p> 
-                            {{stream.description}}
+                            {{stream.summary}}
                         </p>
                         <p>
                             <a href="{{ stream.eventbrite }}">Eventbrite link goes here</a>
@@ -40,6 +40,11 @@
                                 {% endfor %}
                             </table>
                         {% endfor %}
+
+                        <h3>Overview</h3>
+                        <p>
+                            {{ stream.description}}
+                        </p>
 
                     </div>
                 {% endfor %}

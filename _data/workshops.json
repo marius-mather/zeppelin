@@ -2,8 +2,9 @@
     {
         "name": "Stream 1",
         "id": "stream1",
-        "description": "Stream 1 will have cool talks",
+        "summary": "Stream 1 will have cool talks",
         "eventbrite": "link_goes_here",
+        "description": "In this workshop you will learn how to use Python and do all kinds of cool stuff.",
         "schedule": [
             {
                 "date": "2020-07-07",
@@ -20,8 +21,9 @@
     {
         "name": "Stream 2",
         "id": "stream2",
-        "description": "Stream 2 will also have cool talks",
+        "summary": "Stream 2 will also have cool talks",
         "eventbrite": "link_goes_here",
+        "description": "A longer description of what you do in Stream 2, including all the topics covered etc.",
         "schedule": [
             {
                 "date": "2020-07-07",
