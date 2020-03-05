@@ -12,15 +12,15 @@
                     {"start_time": "10:00", "end_time": "10:45",
                     "title": "Learning Python", "speaker": "Guido van Rossum"},
                     {"start_time": "11:00", "end_time": "12:00",
-                    "title": "Learning Python", "speaker": "Guido van Rossum"},
-                ],
+                    "title": "Advanced Python", "speaker": "Guido van Rossum"}
+                ]
             }
         ]
     },
     {
         "name": "Stream 2",
         "id": "stream2",
-        "description": "Stream 2 will have cool talks",
+        "description": "Stream 2 will also have cool talks",
         "eventbrite": "link_goes_here",
         "schedule": [
             {
