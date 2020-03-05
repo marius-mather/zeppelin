@@ -1,6 +1,6 @@
 .top-section-hero {
     width: 100%;
-    height: 30%;
+    height: 100%;
     padding-top: 0;
     .jumbotron {
         position: relative;
@@ -12,9 +12,13 @@
             margin: 0;
             padding: 0;
         }
+        h1 {
+            font-weight: $extra-bold;
+        }
+
         p {
             font-size: $base-font-size * 2;
-            font-weight: $light;
+            font-weight: $bold ;
             margin-bottom: 15px;
         }
         .btn {

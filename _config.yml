@@ -43,16 +43,11 @@ c4sponsorsUrl: ""
 # Navigation
 navigationLinks:
  - {permalink: "/", text: "Home"}
- - {permalink: "/blog/", text: "Blog"}
- - {permalink: "/schedule/", text: "Schedule"}
- - {permalink: "/speakers/", text: "Speakers"}
- - {permalink: "/team/", text: "Team"}
- - {permalink: "/logistics/", text: "Logistics"}
- - {permalink: "/hackathon/", text: "Hackathon"}
+ - {permalink: "/workshops/", text: "Workshops"}
 bottomNavigationLinks:
- - {link: "", text: "Become a speaker"}
+ - {permalink: "/#register-interest", text: "Register interest"}
 rightNavigationButtons:
- - {link: "", text: "Become a speaker"}
+ - {permalink: "/#register-interest", text: "Register interest"}
 
 # Hero Block
 heroImage: "hero.jpg"
@@ -61,14 +56,16 @@ eventDate: "Tuesday 7th — Friday 10th July 2020"
 typeoutTextValues: '"Sydney"'
 typeoutFallback: "Sydney"
 heroButtons:
- - {link: "#register-interest", text: "Contact Us"}
+ - {permalink: "/#register-interest", text: "Contact Us"}
 
 # About Block
 aboutTitle: "About ResBaz"
-aboutBlock:
- - {title: "Conference", image: "conference.jpg", text: "ResBaz is a conference" }
- - {title: "Workshops", image: "workshop.jpg", text: "ResBaz has workshops" }
- - {title: "HPC Day", image: "hackathon.jpg", text: "ResBaz has a HPC day" }
+aboutDetails: >
+  Sydney's Research Bazaar is a low-cost, 4-day intensive festival and conference 
+  where researchers come together to up-skill in next generation digital research 
+  tools and scholarship. In the spirit of a marketplace or bazaar, ResBaz is a highly 
+  participatory event where researchers from many different disciplines can learn, 
+  share knowledge and skills, and have fun.
 
 # Registration of interest form
 interestTitle: "Register your interest here"
@@ -176,36 +173,43 @@ ticketsOffers:
 
 # Footer
 socialLinks:
- - {link: "https://plus.google.com/b/102444623953913144164", icon: "google-plus"}
- - {link: "https://twitter.com/intent/user?screen_name=GDGLviv", icon: "twitter"}
- - {link: "https://facebook.com/GDGLviv", icon: "facebook"}
- - {permalink: "/feed.xml", icon: "rss"}
+ - {link: "mailto:research.bazaar@gmail.com", icon: "email"}
+ - {link: "https://twitter.com/resbaz", icon: "twitter"}
 footerBlocks:
- -
-  title: "Links"
-  links:
-   - {link: "http://gdg.org.ua", text: "GDG.org.ua"}
-   - {link: "https://developers.google.com", text: "Google Developers"}
  -
   title: "Contacts"
   links:
-   - {link: "mailto:lviv@gdg.org.ua", text: "lviv@gdg.org.ua"}
+   - {link: "mailto:research.bazaar@gmail.com", text: "research.bazaar@gmail.com"}
  -
-  title: "FAQ"
+  title: "Important Info"
   links:
-   - {permalink: "/cod/", text: "Code of Conduct"}
+   - {link: "https://resbazblog.wordpress.com/code-of-conduct/", text: "Code of Conduct"}
 
 # Blog
 blogTitle: "Latest news"
-blogCommentsEnabled: true
-discusShortName: "devfestua"
+blogCommentsEnabled: false
+
+# Workshops
+workshopStreams:
+  -
+    id: stream1
+    name: "Stream 1"
+    description: "This is Stream 1"
+  -
+    id: stream2
+    name: "Stream 2"
+    description: "This is Stream 2"
+  -
+    id: stream3
+    name: "Stream 3"
+    description: "This is Stream 3"
 
 # Speakers List Block
 showSessions: true
 
 # Team Block
 teamBlockTitle: "About us"
-aboutUs: "Google's services have become synonymous with simple things online. Number of technological innovations and IT industries in which Google is creating new products is enormous. It's hard to get to know all of them, but realistic. This is why people have started to gather in small local groups and share their experience. Later, the following groups have been called Google Developer Groups. GDGs can take many forms -- from just a few people getting together to watch some videos, to large gatherings with demos, tech talks, hackathons and conferences."
+aboutUs: ""
 
 # Logistics Find Way Block
 findWayTitle: "Find your way here"
