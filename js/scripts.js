@@ -1,12 +1,5 @@
 (function($) {
     $(document).ready(function() {
-        $(window).load(function() {
-            $('#st-container').removeClass('disable-scrolling');
-            $('#loading-animation').fadeOut();
-            $('#preloader').delay(350).fadeOut(800);
-            initGooglePlus();
-            equalheight('.same-height');
-        });
 
         if ($(window).width() > 1500) {
             $('.effect-wrapper').addClass('col-lg-3');
@@ -81,6 +74,7 @@
                 event.preventDefault();
             });
         });
+
         $(function() {
             if(window.location.href.indexOf("schedule") > -1 && window.location.hash) {
                 var hash = window.location.hash;
