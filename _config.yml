@@ -184,6 +184,10 @@ footerBlocks:
   title: "Important Info"
   links:
    - {link: "https://resbazblog.wordpress.com/code-of-conduct/", text: "Code of Conduct"}
+ -
+  title: "Credits"
+  links:
+   - {link: "https://www.flickr.com/photos/8264482@N08/6808207394", text: "Banner by Sydney Uni, CC BY-NC-SA 2.0"}
 
 # Blog
 blogTitle: "Latest news"
